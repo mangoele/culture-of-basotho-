@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Feedback</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+ 
+  <!-- 🌍 Navigation -->
+  <nav class="navbar">
+    <div class="logo">Basotho Heritage</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="clothing.html">Clothing</a></li>
+      <li><a href="music.html">Music & Dance</a></li>
+      <li><a href="crafts.html">Crafts & Art</a></li>
+       <li><a href="festivals.html">Festivals</a></li>
+      <li><a href="contacts.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+
+
+
+
+  <!-- 📩 Contact Header -->
+  <header class="page-header contact-header">
+    <h1>Contact & Feedback</h1>
+    <p>share your thoughts, questions, or ideas below.</p>
+  </header>
+
+
+
+  <!-- 📬 Contact Form Section -->
+  <section class="contact-section">
+    <form class="contact-form" action="#" method="post">
+      <!-- Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <!-- Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Topic -->
+      <label for="topic">Topic of Interest:</label>
+      <select id="topic" name="topic" required>
+        <option value="">--Select a topic--</option>
+        <option value="clothing">Traditional Clothing</option>
+        <option value="music">Music & Dance</option>
+        <option value="crafts">Crafts & Art</option>
+        <option value="festivals">Festivals</option>
+        <option value="general">General Inquiry</option>
+      </select>
+
+      <!-- Message -->
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+      <!-- Submit -->
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+    <div class="social-links">
+  <a href="https://facebook.com/yourprofile" target="_blank" class="social facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://twitter.com/yourprofile" target="_blank" class="social twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social linkedin">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://instagram.com/yourprofile" target="_blank" class="social instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+
+  <!-- 👣 Footer -->
+  <footer>
+    <p>&copy; 2025 Basotho Cultural Heritage | Preserving Tradition</p>
+  </footer>
+</body>
+</html>

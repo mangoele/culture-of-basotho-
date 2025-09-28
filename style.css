@@ -1,0 +1,541 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+background: url("images/VILLAGE.JPG") no-repeat center center/cover;
+  
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Intro Section */
+.intro {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+/* Gallery Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item h3 {
+  margin: 1rem 0 0.5rem;
+  color: #2c3e50;
+  color: #004080;
+  margin-top: 0.5rem;
+}
+
+.gallery-item p {
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.gallery-item a {
+  display: inline-block;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: #f39c12;
+  font-weight: bold;
+  background: white;
+  padding: 1px;
+  border-radius: 10px;
+
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.navbar {
+  background: #004080;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+.intro {
+  background: #e0e0e0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.media {
+  text-align: center;
+  padding: 2rem;
+}
+
+.media h2 {
+  color: #004080;
+}
+
+.media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.content {
+  padding: 2rem;}
+
+  
+.item {
+  background: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-left: 5px solid #004080;
+  max-width: 800px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item h3 {
+  color: #004080;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+.crafts-header {
+  background: linear-gradient(rgba(128,64,0,0.6), rgba(128,64,0,0.6)),
+              url("images/crafts-bg.jpg") no-repeat center/cover;
+}
+
+/* 🧺 Crafts Gallery */
+.crafts-gallery {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.crafts-gallery h2 {
+  font-size: 2.2rem;
+  color: #663300; /* earthy tone */
+  margin-bottom: 0.5rem;
+}
+
+.crafts-gallery p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.crafts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+/* Individual Craft Card */
+.craft-item {
+  background: #fffdf9;
+  border: 2px solid #e0c097;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.craft-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+/* Images */
+.craft-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Titles & Text */
+.craft-item h3 {
+  color: #994d00;
+  margin-bottom: 0.5rem;
+}
+
+.craft-item p {
+  color: #444;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Links */
+.craft-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #994d00;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+
+.craft-item a:hover {
+  background: #cc6600;
+}
+
+
+
+
+
+
+/* 📩 Contact Header */
+.contact-header {
+  background: linear-gradient(rgba(0, 64, 128, 0.7), rgba(0, 64, 128, 0.7)),
+              url("images/contact-bg.jpg") no-repeat center/cover;
+}
+
+/* 📝 Contact Section */
+.contact-section {
+  padding: 3rem 1.5rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Labels */
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #004080;
+}
+
+/* Inputs, Select & Textarea */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #004080;
+  box-shadow: 0 0 6px rgba(0,64,128,0.3);
+  outline: none;
+}
+
+/* Submit Button */
+.contact-form button {
+  padding: 0.9rem;
+  background: #004080;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #003366;
+}
+
+/* 📱 Mobile-Friendly */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+
+
+
+
+ /*🎉 Festivals Header */
+.festivals-header {
+  background: linear-gradient(rgba(200,0,0,0.6), rgba(200,0,0,0.6)),
+              url("images/festivals-bg.jpg") no-repeat center/cover;
+}
+
+/* 🎊 Festivals Gallery */
+.festivals-gallery {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.festivals-gallery h2 {
+  font-size: 2.2rem;
+  color: #800000; /* deep red tone */
+  margin-bottom: 0.5rem;
+}
+
+.festivals-gallery p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.festivals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+/* Festival Cards */
+.festival-item {
+  background: #fffdfc;
+  border: 2px solid #e6b8af;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.festival-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+/* Images */
+.festival-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Titles & Text */
+.festival-item h3 {
+  color: #b22222;
+  margin-bottom: 0.5rem;
+}
+
+.festival-item p {
+  color: #444;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Links */
+.festival-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #b22222;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+
+.festival-item a:hover {
+  background: #8b0000;
+}
+
+
+
+
+
+.social-links {
+  display: flex;
+  justify-content:center;
+  bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #1da1f2; }
+.linkedin { background-color: #0077b5; }
+.instagram { background-color: #e1306c; }
+
+.social:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .social {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
